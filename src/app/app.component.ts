@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cookbook';
+  selectedRoute: string = "recipe"
+
+  onRouteChanged(route: string){
+    this.selectedRoute = route;
+  }
 }
